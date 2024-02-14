@@ -25,6 +25,6 @@ type Indexer interface {
 }
 
 type Searcher interface {
-	Search(ctx context.Context, repoIDs []int64, query string, maxResultCount int) (
+	Search(ctx context.Context, repoIDs []int64, query string, maxResultCount int, page int) (
 		types.SearchResult, error)
 }
